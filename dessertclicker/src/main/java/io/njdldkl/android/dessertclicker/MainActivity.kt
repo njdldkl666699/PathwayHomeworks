@@ -110,7 +110,7 @@ private fun shareSoldDessertsInformation(intentContext: Context, dessertsSold: I
         action = Intent.ACTION_SEND
         putExtra(
             Intent.EXTRA_TEXT,
-            intentContext.getString(R.string.share_text, dessertsSold, revenue)
+            intentContext.resources.getQuantityString(R.plurals.share_text, dessertsSold, dessertsSold, revenue)
         )
         type = "text/plain"
     }

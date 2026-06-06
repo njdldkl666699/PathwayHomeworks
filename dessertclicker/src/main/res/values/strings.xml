@@ -18,7 +18,9 @@
     <string name="dessert_sold">Desserts sold</string>
     <string name="total_revenue">Total Revenue</string>
     <string name="share">Share</string>
-    <string name="share_text">I\'ve clicked %1$d Desserts for a total of $%2$d #AndroidDessertClicker</string>
+    <plurals name="share_text">
+        <item quantity="one">I\'ve clicked %1$d Dessert for a total of $%2$d #AndroidDessertClicker</item>
+        <item quantity="other">I\'ve clicked %1$d Desserts for a total of $%2$d #AndroidDessertClicker</item>
+    </plurals>
     <string name="sharing_not_available">Sharing Not Available</string>
-    <string name="title_activity_main2">MainActivity2</string>
 </resources>
