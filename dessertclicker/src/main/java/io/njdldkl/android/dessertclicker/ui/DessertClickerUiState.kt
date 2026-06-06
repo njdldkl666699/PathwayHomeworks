@@ -1,0 +1,12 @@
+package io.njdldkl.android.dessertclicker.ui
+
+import androidx.annotation.DrawableRes
+import io.njdldkl.android.dessertclicker.data.Datasource.dessertList
+
+data class DessertClickerUiState(
+    val revenue: Int = 0,
+    val dessertsSold: Int = 0,
+    val currentDessertIndex: Int = 0,
+    val currentDessertPrice: Int = dessertList[currentDessertIndex].price,
+    @DrawableRes val currentDessertImageId: Int = dessertList[currentDessertIndex].imageId
+)
